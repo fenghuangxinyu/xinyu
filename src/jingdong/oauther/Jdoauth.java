@@ -52,7 +52,7 @@ public class Jdoauth {
 			System.out.println(json);
 			List<com.jd.open.api.sdk.domain.order.OrderQueryJsfService.OrderSearchInfo> orderinfo = ordersearchresponse.getSearchorderinfoResult().getOrderInfoList();
 			for(OrderSearchInfo orderinfo1:orderinfo) {
-				System.out.println("¶©µ¥ºÅ:"+orderinfo1.getOrderId()+" ¶©µ¥×Ü½ğ¶î:"+orderinfo1.getOrderTotalPrice()+" ¶©µ¥¿ªÆ±ĞÅÏ¢:"+orderinfo1.getInvoiceInfo());
+				System.out.println("è®¢å•å·:"+orderinfo1.getOrderId()+" è®¢å•æ€»é‡‘é¢:"+orderinfo1.getOrderTotalPrice()+" è®¢å•å¼€ç¥¨ä¿¡æ¯:"+orderinfo1.getInvoiceInfo());
 			}
 		} catch (JdException e) {
 			// TODO Auto-generated catch block
